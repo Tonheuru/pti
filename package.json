@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "observable-process": "4.0.0",
+    "request": "2.85.0",
+    "text-runner": "1.0.4"
+  }
+}
