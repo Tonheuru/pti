@@ -1,2 +1,4 @@
 test:
-	bin/node_modules/.bin/text-run
+	node_modules/.bin/text-run
+	killall web-server
+	killall hello-server
