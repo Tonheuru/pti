@@ -18,6 +18,12 @@ It is optimized for engineering in the large -
 large teams working over long periods of time on large code bases solving big problems.
 
 
+## Setting up Pairforce
+- steps
+
+explain Pairforce
+
+
 ## Step 1 - a hello world program
 
 The first step in every programmer journey is a "hello world" program.
