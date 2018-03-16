@@ -223,7 +223,7 @@ When you are done, stop the server by hitting `Ctrl-C`.
 </a>
 
 
-## Step 4 - a static web server
+## Step 4 - a web server
 
 Right now our server is just a small API that returns a greeting.
 Let's make it return a real web page.
