@@ -12,6 +12,11 @@ No previous programming knowledge is needed.
 
 ## Setting up Pairforce
 
+If you have Go installed on your computer, skip this chapter and code away!
+If not, don't worry, we will develop software on a cloud server from pairforce.io.
+Pairforce is a platform that allows remote pair programming. 
+In this session, we use their cloud offering.
+
 - go to [pairforce.io](https://pairforce.io)
 - sign up (with email or Github account)
 - click on "dashboard"
