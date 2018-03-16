@@ -191,6 +191,12 @@ ec2-52-53-223-49.us-west-1.compute.amazonaws.com
 That's a website address under which your server is running. 
 Try it out by copy-and-pasting it into the URL field in a new browser tab.
 **Append `:8080` to the end, without spaces.**
+The address should look something like this:
+
+```
+http://ec2-52-53-223-49.us-west-1.compute.amazonaws.com:8080
+```
+
 You should see the text "hello world", which is exactly what our API returns.
 
 <a textrun="stop-console-command">
