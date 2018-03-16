@@ -8,7 +8,15 @@ No previous programming knowledge is needed.
 ## Requirements
 
 - a laptop with internet access
-- a [Pairforce.io](http://pairforce.io) account
+
+
+## Setting up Pairforce
+
+- go to [pairforce.io](https://pairforce.io)
+- sign up (with email or Github account)
+- click on "dashboard"
+- click "start session"
+- wait until the cloud server has started
 
 
 ## Intro to Go
