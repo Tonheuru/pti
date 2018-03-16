@@ -4,6 +4,10 @@ In this course,
 we are going to write a little Go-based service.
 No previous programming knowledge is needed.
 
+This course takes about 15 minutes when speeding through it.
+Please take time to understand what you are doing
+and ask a lot of questions!
+
 
 ## Requirements
 
@@ -38,9 +42,13 @@ The first step in every programmer journey is a "hello world" program.
 It is the simplest possible program.
 All it does is print "hello world".
 
-Create a new folder anywhere on your computer, for example on your desktop.
+Go to the browser tab that shows the PairForce window.
+The left side shows a file tree and an editor window to edit the content of files on the cloud server.
+The right side shows a terminal for that cloud server.
+This is a Linux system, so we are going to use Linux commands.
 
-Inside that folder, <a textrun="create-file">create a file __hello.go__ with the content:
+<a textrun="create-file">
+Paste the code below into the text editor on the left:
 
 ```go
 package main
@@ -51,10 +59,21 @@ func main() {
 	fmt.Println("Hello world!")
 }
 ```
+Then click the "save" icon in the bottom of the editor, enter __hello.go__ as the file name,
+and click the "save" button.
+
 </a>
 
+Let's look what this Go program does.
+
+- `package main` tells Go that this is the main file in our program
+- `import "fmt"` imports (loads) another package (code library) called "fmt". This library allows Go programs to print text in the terminal it is running in
+- `func main()` defines a function with the name `main`. This is how you tell Go which code to run. When starting a Go program, Go automatically runs the `main` function from the `main` package. 
+- inside the `main` function, we call the `Println` function from the `fmt` package with the arguments `"Hello world!"`.
+
 <a textrun="run-console-command">
-Now run this command in the terminal:
+Let's see what this `Println` function does.
+Run this command in the terminal to the right of the text editor window in the browser:
 
 ```
 go run hello.go
