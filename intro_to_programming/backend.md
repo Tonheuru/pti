@@ -24,6 +24,7 @@ No previous programming knowledge is needed.
 Go is a modern language for building backend services.
 It is optimized for engineering in the large -
 large teams working over long periods of time on large code bases solving big problems.
+More information at https://github.com/Originate/guide/tree/master/go.
 
 
 ## Step 1 - a hello world program
@@ -163,14 +164,23 @@ server online at http://localhost:8080
 ```
 </a>
 
-<a textrun="verify-url-content">
-
-Now go to __http://localhost:8080__ and you see:
+Let's determine the address of the cloud server, so that we can look at the API.
+Run this command in the terminal:
 
 ```
-hello world!
+curl http://169.254.169.254/latest/meta-data/public-hostname
 ```
-</a>
+
+It prints something like:
+
+```
+ec2-52-53-223-49.us-west-1.compute.amazonaws.com
+```
+
+That's a website address under which your server is running. 
+Try it out by copy-and-pasting it into the URL field in a new browser tab.
+**Append `:8080` to the end, without spaces.**
+You should see the text "hello world", which is exactly what our API returns.
 
 <a textrun="stop-console-command">
 When you are done, stop the server by hitting `Ctrl-C`.
@@ -179,8 +189,10 @@ When you are done, stop the server by hitting `Ctrl-C`.
 
 ## Step 4 - a static web server
 
-Messing around in Go source code each time we want to change the server output is getting cumbersome.
-Let's create a basic web server.
+Right now our server is just a small API that returns a greeting. 
+Let's make it return a real web page.
+Since we will do a lot of changes, and don't want to mess around in the server's source code each time,
+we'll create a simple static file server.
 For each request, it reads the file "index.html" and returns its content to the browser.
 <a textrun="create-file">
 Create a file __web-server.go__
@@ -207,7 +219,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", handler)
 	fmt.Println("server online at http://localhost:8081")
-	http.ListenAndServe(":8081", nil)
+	http.ListenAndServe(":8080", nil)
 }
 ```
 </a>
@@ -219,7 +231,7 @@ and a file __index.html__:
 <html>
   <body>
     <h1>Hello World!</h1>
-    It feels good to be alive!
+    It feels good to be online!
   </body>
 </html>
 ```
@@ -243,16 +255,11 @@ server online at http://localhost:8081
 ```
 </a>
 
-
-<a textrun="verify-url-content">
-
-Go to __http://localhost:8081__ and
-you see a web page saying
+You see a web page saying
 
 ```
 Hello World!
 ```
-</a>
 
 You can modify the content of the file `index.html`
 to make your webserver show different things.
