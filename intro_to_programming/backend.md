@@ -132,6 +132,10 @@ func main() {
 Go was invented just a few years ago, in the internet age.
 It has all the functionality needed to create network servers built in.
 
+An API server is a web server that returns data in a machine-readable format.
+In contrast, a web server returns data in a human-readable format.
+First, we are going to create a simple API server.
+
 <a textrun="create-file">
 
 Create a file **hello-server.go** with the content:
@@ -196,7 +200,7 @@ When you are done, stop the server by hitting `Ctrl-C`.
 
 ## Step 4 - a static web server
 
-Right now our server is just a small API that returns a greeting. 
+Right now our server is just a small API that returns a greeting.
 Let's make it return a real web page.
 Since we will do a lot of changes, and don't want to mess around in the server's source code each time,
 we'll create a simple static file server.
