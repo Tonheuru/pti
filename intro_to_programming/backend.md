@@ -33,7 +33,9 @@ The first step in every programmer journey is a "hello world" program.
 It is the simplest possible program.
 All it does is print "hello world".
 
-<a textrun="create-file">Create a file __hello.go__ with the content:
+Create a new folder anywhere on your computer, for example on your desktop.
+
+Inside that folder, <a textrun="create-file">create a file __hello.go__ with the content:
 
 ```go
 package main
