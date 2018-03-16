@@ -67,7 +67,7 @@ and click the "save" button.
 Let's look what this Go program does.
 
 - `package main` tells Go that this is the main file in our program
-- `import "fmt"` imports (loads) another package (code library) called "fmt". This library allows Go programs to print text in the terminal it is running in
+- `import "fmt"` imports (loads) another package (code library) called `fmt`. This library allows Go programs to print text in the terminal it is running in
 - `func main()` defines a function with the name `main`. This is how you tell Go which code to run. When starting a Go program, Go automatically runs the `main` function from the `main` package. 
 - inside the `main` function, we call the `Println` function from the `fmt` package with the arguments `"Hello world!"`.
 
