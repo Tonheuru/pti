@@ -197,7 +197,7 @@ The address should look something like this:
 http://ec2-52-53-223-49.us-west-1.compute.amazonaws.com:8080
 ```
 
-You should see the text "hello world", which is exactly what our API returns.
+When you go to this address, you should see the text "hello world", which is exactly what our API returns.
 
 <a textrun="stop-console-command">
 When you are done, stop the server by hitting `Ctrl-C`.
