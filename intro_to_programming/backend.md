@@ -254,7 +254,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", handler)
-	fmt.Println("server online at http://localhost:8081")
+	fmt.Println("server online at http://localhost:8080")
 	http.ListenAndServe(":8080", nil)
 }
 ```
@@ -288,7 +288,7 @@ and make sure it starts up properly and says
 <a textrun="wait-for-output">
 
 ```
-server online at http://localhost:8081
+server online at http://localhost:8080
 ```
 </a>
 
