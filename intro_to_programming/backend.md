@@ -260,9 +260,9 @@ func main() {
 ```
 </a>
 
+Let's create another file by clicking on the `+` next to the tab of the editor that shows the filename.
 <a textrun="create-file">
-	
-and a file __index.html__:
+Paste this content:
 
 ```html
 <html>
@@ -274,6 +274,7 @@ and a file __index.html__:
 ```
 </a>
 
+Save the file and name it __index.html__.
 
 <a textrun="start-console-command">
 Start the server by running:
