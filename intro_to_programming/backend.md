@@ -18,7 +18,7 @@ and ask a lot of questions!
 
 If you have Go installed on your computer, skip this chapter and code away!
 If not, don't worry, we will develop software on a cloud server from pairforce.io.
-Pairforce is a platform that allows remote pair programming. 
+Pairforce is a platform that allows remote pair programming.
 In this session, we use their cloud offering.
 
 - go to [pairforce.io](https://pairforce.io)
@@ -68,7 +68,7 @@ Let's look what this Go program does.
 
 - `package main` tells Go that this is the main file in our program
 - `import "fmt"` imports (loads) another package (code library) called `fmt`. This library allows Go programs to print text in the terminal it is running in
-- `func main()` defines a function with the name `main`. This is how you tell Go which code to run. When starting a Go program, Go automatically runs the `main` function from the `main` package. 
+- `func main()` defines a function with the name `main`. This is how you tell Go which code to run. When starting a Go program, Go automatically runs the `main` function from the `main` package.
 - inside the `main` function, we call the `Println` function from the `fmt` package with the arguments `"Hello world!"`.
 
 <a textrun="run-console-command">
@@ -186,6 +186,7 @@ Start the server by running:
 go run api-server.go
 ```
 </a>
+
 <a textrun="wait-for-output">
 You should see:
 
@@ -207,7 +208,7 @@ It prints something that looks like:
 ec2-52-53-223-49.us-west-1.compute.amazonaws.com
 ```
 
-That's a website address under which your server is running. 
+That's a website address under which your server is running.
 Try it out by copy-and-pasting it into the URL field in a new browser tab.
 **Append `:8080` to the end, without spaces.**
 The address should look something like this (just with different numbers):
@@ -272,9 +273,9 @@ Paste this content:
   </body>
 </html>
 ```
-</a>
 
 Save the file and name it __index.html__.
+</a>
 
 <a textrun="start-console-command">
 Start the server by running:
@@ -308,7 +309,7 @@ For example, update the content of the file __index.html__ to this one:
 ```html
 <html>
   <head>
-    <link rel="stylesheet" 
+    <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   </head>
   <body>
@@ -327,6 +328,7 @@ For example, update the content of the file __index.html__ to this one:
   </body>
 </html>
 ```
+</a>
 
 
 <a textrun="stop-console-command">
