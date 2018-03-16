@@ -157,7 +157,7 @@ First, we are going to create a simple API server.
 
 <a textrun="create-file">
 
-Create a file **hello-server.go** with the content:
+Create a file **api-server.go** with the content:
 
 ```go
 package main
@@ -173,7 +173,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", handler)
-	fmt.Println("server online at http://localhost:8080")
+	fmt.Println("API server online at http://localhost:8080")
 	http.ListenAndServe(":8080", nil)
 }
 ```
@@ -183,14 +183,14 @@ func main() {
 Start the server by running:
 
 ```
-go run hello-server.go
+go run api-server.go
 ```
 </a>
 <a textrun="wait-for-output">
 You should see:
 
 ```
-server online at http://localhost:8080
+API server online at http://localhost:8080
 ```
 </a>
 
