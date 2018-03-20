@@ -1,4 +1,4 @@
-# Intro to programming - Backend track
+# Backend programming for Non-Engineers
 
 In this course,
 we are going to write a little Go-based service.
