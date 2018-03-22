@@ -377,11 +377,11 @@ CSS is typically stored in a seperate file, for example `styles.css`. Create tha
 
 
 ```html
-<body>
+<html>
   <head>
     <link href="styles.css" rel="stylesheet">
   </head>
-</body>
+</html>
 ```
 
 Perfect, now you're able to add css definitions to your HTML page.
@@ -404,6 +404,7 @@ It comes after the `<html>` tag, before the `<body>` tag:
 ```html
 <head>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
 </head>
 ```
 
@@ -413,6 +414,7 @@ For reference, this beginning of the HTML file looks like this now:
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
   </head>
   <body>
     ...
@@ -580,11 +582,82 @@ table {
 
 This "collapses" the borders between table cells, i.e. removes them.
 
-## JavaScript
+## Adding a Navigation
+
+Let's combine all the knowledge so and add a navigation bar to our website with HTML and CSS. As the navigation bar is the first item on the webpage, the navigation element will be the first element in the body. To define a navigation, we will use the `<nav>` tag.
 
 
-## Simple JavaScript
+```html
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+	...
+    </nav>
+```
+
+Next, you probably want to add some links to you navigation:
 
 
-## React
+```html
+<nav>
+  <a href="/">Home</a>
+  <a href="https://en.wikipedia.org/wiki/Greenhouse_effect">Wikipedia Article</a>
+</nav>
+```
 
+That's great, but not beautiful. We will change that now. First, the navigation should be visible even if we scroll the page. This is possible by using `position: fixed`:
+
+```css
+nav {
+  position: fixed;
+}
+```
+
+The navigation should also be visually separated. We can do that by defining a background color for the item. For flashy use, we will use a color that has opacity. Colors with opacity are defined with `rgba`:
+
+```css
+nav {
+  position: fixed;
+  background-color: rgba(102, 153, 0, .7);
+}
+```
+
+This looks strange now. We have to give the element a bit of spacing (using `padding`) and also make it full width (using `width`):
+
+```css
+nav {
+  position: fixed;
+  background-color: rgba(102, 153, 0, .7);
+  padding: 20px;
+  width: 100%;
+}
+```
+
+The positioning of the element is still off. This is caused by `position: fixed`. Let's change that using `top` and `left`:
+
+
+```css
+nav {
+  position: fixed;
+  background-color: rgba(102, 153, 0, .7);
+  padding: 20px;
+  width: 100%;
+  
+  top: 0;
+  left: 0;
+}
+```
+
+The last thing we want to do is give the first heading element a bit of spacing to the top. Here we will use `margin-top` which is the spacing around the element, whereas `padding` is the spacing within the element. Update the `h1` rule from earlier:
+
+```css
+h1 {
+  color: seagreen;
+  
+  margin-top: 50px;
+}
+```
