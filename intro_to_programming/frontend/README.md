@@ -446,6 +446,30 @@ body {
 }
 ```
 
+It's also possible to define more complex background patterns, for example background images. To load a resource from a remote location - in this case pexels.com - wrap the URL with the `url()` function.
+
+```css
+body {
+  background-image: url("https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg");
+  
+  /* previous code */
+  background-color: cornsilk;
+  font-family: 'Open Sans', sans-serif;
+}
+```
+
+If you define both a background image and a background color, the background color will be used as fallback if the image can not be located:
+
+```css
+body {
+  background-image: url("this url does not exist");
+
+  /* previous code */
+  background-color: cornsilk;
+  font-family: 'Open Sans', sans-serif;
+}
+```
+
 While we are at it,
 let's also give the different heading types different colors:
 
@@ -527,7 +551,6 @@ table {
 ```
 
 This "collapses" the borders between table cells, i.e. removes them.
-
 
 ## JavaScript
 
