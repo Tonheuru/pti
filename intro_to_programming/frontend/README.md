@@ -34,15 +34,17 @@ func main() {
 }
 ```
 
+find the URL:
 
-### Setting up JsFiddle
+```
+curl http://169.254.169.254/latest/meta-data
+```
 
-- go to https://jsfiddle.net
-- click on `Settings`
-- enable `Auto-run code`
-- click in the `HTML` field (the top left input field) to close the settings
-- type `hello world` into the `HTML` field
-- you should see `hello world` printed in the preview field on the bottom right
+run the server:
+
+```
+go run server.go
+```
 
 
 ## Overview of frontend technologies
