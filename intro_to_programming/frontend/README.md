@@ -34,16 +34,32 @@ func main() {
 }
 ```
 
-find the URL:
+run the server:
+
+```
+go run server.go
+```
+
+Let's determine the address of the cloud server, so that we can look at the API.
+Run this command in the terminal:
 
 ```
 curl http://169.254.169.254/latest/meta-data/public-hostname/
 ```
 
-run the server:
+It prints something that looks like:
 
 ```
-go run server.go
+ec2-52-53-223-49.us-west-1.compute.amazonaws.com
+```
+
+That's a website address under which your server is running.
+Try it out by copy-and-pasting it into the URL field in a new browser tab.
+**Append `:8080` to the end, without spaces.**
+The address should look something like this (just with different numbers):
+
+```
+http://ec2-52-53-223-49.us-west-1.compute.amazonaws.com:8080
 ```
 
 
