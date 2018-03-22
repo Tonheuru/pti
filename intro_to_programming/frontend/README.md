@@ -14,6 +14,27 @@ and ask a lot of questions!
 - a laptop with internet access
 
 
+### Setting up the Go fileserver
+
+Create a file __server.go__ with the content:
+
+```go
+package main
+
+import (
+	"log"
+	"net/http"
+)
+
+func main() {
+	fs := http.FileServer(http.Dir("static"))
+	http.Handle("/", fs)
+	log.Println("Listening...")
+	http.ListenAndServe(":8080", nil)
+}
+```
+
+
 ### Setting up JsFiddle
 
 - go to https://jsfiddle.net
