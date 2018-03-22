@@ -212,6 +212,17 @@ This comes in handy for programmers like us right now.
 They can keep large amounts of HTML organized
 in a way that is easy to read for them.
 
+If you need to create a new line, use the `<br>` tag:
+
+```html
+<body>
+  CO<sub>2</sub> in the athmosphere<br>
+  leads to a <em>worldwide</em><br>
+  <a href="https://en.wikipedia.org/wiki/Greenhouse_effect">
+    greenhouse effect
+  </a>.
+</body>
+```
 
 ### Tables
 
