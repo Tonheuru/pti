@@ -199,7 +199,7 @@ Let's determine the address of the cloud server, so that we can look at the API.
 Run this command in the terminal:
 
 ```
-curl http://169.254.169.254/latest/meta-data/public-hostname
+curl http://169.254.169.254/latest/meta-data/public-hostname/
 ```
 
 It prints something that looks like:
