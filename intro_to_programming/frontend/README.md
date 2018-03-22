@@ -476,13 +476,15 @@ It's also possible to define more complex background patterns, for example backg
 
 ```css
 body {
-  background-image: url("https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg");
+  background-image: url("https://static.pexels.com/photos/247041/pexels-photo-247041.jpeg");
   
   /* previous code */
   background-color: cornsilk;
   font-family: 'Open Sans', sans-serif;
 }
 ```
+
+By the way, you can use images from pexels for personal and commercial projects for free!
 
 If you define both a background image and a background color, the background color will be used as fallback if the image can not be located:
 
