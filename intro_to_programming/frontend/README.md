@@ -37,7 +37,7 @@ func main() {
 find the URL:
 
 ```
-curl http://169.254.169.254/latest/meta-data
+curl http://169.254.169.254/latest/meta-data/
 ```
 
 run the server:
