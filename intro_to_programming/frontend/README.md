@@ -359,6 +359,20 @@ We now have a small document with interesting content to read.
 It doesn't look very modern, though.
 Let's fix that by adding layout information.
 
+### Loading CSS files
+
+CSS is typically stored in a seperate file, for example `styles.css`. Create that file now in the root directory of your project. No need to add content yet. To load the CSS file, you must link to it from the HTML file which you created earlier:
+
+
+```html
+<body>
+  <head>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+</body>
+```
+
+Perfect, now you're able to add css definitions to your HTML page.
 
 ### Font
 
