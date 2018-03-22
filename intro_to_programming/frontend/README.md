@@ -102,7 +102,7 @@ Each HTML document consists of two parts:
 - the __body__ contains the actual text content of the document
 
 Let's write some HTML!
-Enter this into the `HTML` field in the top left of JsFiddle:
+Create a file __index.html__ with this content:
 
 ```html
 <html>
@@ -180,8 +180,7 @@ For reference, the entire document should look like this:
 </html>
 ```
 
-Check that the link works by clicking on it in the preview window of JsFiddle.
-Click the `back` button of your browser to go back to your document.
+Check that the link works by refreshing the browser.
 
 Links are created by an `<a>` HTML tag (which stands for _anchor_).
 This tag contains an __attribute__ with the _name_ `href`
